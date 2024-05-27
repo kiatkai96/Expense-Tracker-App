@@ -1,0 +1,36 @@
+We install styled components to replace css instead.
+
+1) First, create the App.js and import the Header and HomeComponent components.
+2) Create the HomeComponent which comprises of the OverviewComponent and the TransactionComponent
+3) Then inside the OverviewComponent we created the BalanceBox container and the
+Add transaction container. 
+4) Inside the AddTransactionView, we create the container for the inputs of the user transaction 
+5) Add the state variable of isAddTransactionVisible to the onClick function of AddTransaction
+such that when the user click on Add, it will toggle to Cancel and vice versa
+6) Now we create 3 states within the AddTransactionView: amount, desc, type. Then we use the state within the inputs
+7) Set the onChange function for the input variable so that when we clicked on expense it will change to income 
+8) Add a another method addTransaction such that when the button is clicked, it will log the 
+info to the console and then call the setAddTransactionVisible() from the props to close the 
+transaction view container
+9) Create an ExpenseContainer with 2 ExpenseBox in it. Use props and conditional rendering where
+isIncome = True then set font color to green else red
+
+Now we work on the transactionComponent
+1)
+
+
+Scoring components:
+1) Use JSX (5%): Used JSX throughout my components, which is the standard way of defining React components. For example, <Container> and <ExpenseContainer> in my components.
+2) Breaking down application into smaller components (5%): Broken down my application into smaller components like OverViewComponent, TransactionComponent, and AddTransactionView, 
+which helps in managing complexity and reusability.
+3) Reuse components via passing info through props (5%): Passing information between components using props, such as passing addTransaction, expense, and income from HomeComponent to OverViewComponent.
+4) Conditional rendering (5%): Used conditional rendering in OverViewComponent to conditionally display the AddTransactionView component based on the value of isAddTransactionVisible.
+5) List rendering (5%): Used .map() to render a list of transactions in TransactionComponent based on the transactions prop.
+6) Maintain application state within components (10%): Used useState hooks to maintain state within your components, such as transactions, expense, and income in HomeComponent.
+7) Lifting state up (10%): YLifting the state up from AddTransactionView to HomeComponent by passing the addTransaction function as a prop to AddTransactionView.
+8) Creating interactivity through events (10%): Creating interactivity by handling events, such as the onClick event in AddTransaction button in OverViewComponent.
+9) Allowing user’s input (e.g. forms) (10%): Allowing user input in AddTransactionView through input fields for amount and desc, and radio buttons for type.
+10) App logic (10%): Implemented application logic to calculate balance, add transactions, and filter transactions based on search criteria.
+11) Styling (5%): Using styled-components to style your components, such as Container, Cell, AddTransaction, etc.
+12) Code Readability (5%)
+13) Wiki Update (15%)
